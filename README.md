@@ -5,14 +5,14 @@ El objetivo es exponer la lógica de negocio de la aplicación **Muebles de los 
 
 ---
 
-## 📌 Objetivos del laboratorio
+## Objetivos del laboratorio
 - Utilizar REST para exponer servicios de lógica de una aplicación implementada con JEE.
 - Implementar objetos *mock* para facilitar las pruebas de los servicios REST.
 - Probar los servicios con herramientas como **Postman**.
 
 ---
 
-## 🏗️ Arquitectura del proyecto
+## Arquitectura del proyecto
 El proyecto se organiza en tres módulos principales:
 
 - **mueblesdelosalpes.backend**  
@@ -32,7 +32,7 @@ El proyecto se organiza en tres módulos principales:
 
 ---
 
-## ⚙️ Configuración
+## Configuración
 1. Clonar el repositorio en NetBeans.  
 2. Realizar **Clean and Build** de los módulos `backend` y `servicios`.  
 3. Desplegar únicamente el módulo `mueblesdelosalpes.servicios` en GlassFish 4.1.  
@@ -40,44 +40,7 @@ El proyecto se organiza en tres módulos principales:
 
 ---
 
-## 🚀 Servicios REST implementados
-
-### Vendedores
-- **GET** `/vendedores` → Lista todos los vendedores.  
-- **POST** `/vendedores` → Agrega un nuevo vendedor.  
-- Ejemplo de JSON válido:
- ```json
- {
-   "nombres": "Juan",
-   "apellidos": "Pérez",
-   "experiencia": [
-     {
-       "id": 1,
-       "nombreEmpesa": "Prueba S.A.",
-       "cargo": "Vendedor",
-       "descripcion": "Experiencia de prueba",
-       "ano": 2020
-     }
-   ],
-   "salario": 1500000,
-   "comisionVentas": 120000,
-   "perfil": "Ingeniero de sistemas",
-   "foto": "juanFoto",
-   "identificacion": 5
- }
- ```
-- **DELETE** `/vendedores/{id}` → Elimina un vendedor por su identificador.
-
-### Catálogo
-- **GET** `/catalogo/muebles` → Lista todos los muebles disponibles.
-
-### Ofertas (entregable del laboratorio)
-- **GET** `/oferta/ofertas` → Lista todas las ofertas registradas.  
-- **POST** `/oferta/agregar` → Agrega una nueva oferta sobre un mueble.
-
----
-
-## 🧪 Pruebas con Postman
+## Pruebas con Postman
 - Se recomienda usar **Postman** para probar los endpoints.  
 - Ejemplos de pruebas incluidas en el entregable:  
 - Pantallazo de creación de un vendedor.  
@@ -87,13 +50,7 @@ El proyecto se organiza en tres módulos principales:
 
 ---
 
-## 📄 Entregables
+## Entregables
 - Código fuente modificado con los servicios REST.  
 - Evidencias en Postman: creación y visualización de vendedores y ofertas.  
 - README con instrucciones de ejecución y pruebas.
-
----
-
-## 👨‍💻 Autor
-- **Juan Sebastián Urrego**  
-Proyecto académico para el curso de Arquitectura de Software - Servicios REST.
