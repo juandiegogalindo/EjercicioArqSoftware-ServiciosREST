@@ -35,6 +35,7 @@ import javax.ejb.Stateless;
  * @author Juan Sebastián Urrego
  */
 
+@Stateless
 public class ServicioPersistenciaMock implements IServicioPersistenciaMockRemote, IServicioPersistenciaMockLocal {
 
     //-----------------------------------------------------------

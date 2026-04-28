@@ -21,6 +21,7 @@ import javax.ejb.Local;
  * @author Juan Sebastián Urrego
  */
 
+@Local
 public interface IServicioPersistenciaMockLocal
 {
 

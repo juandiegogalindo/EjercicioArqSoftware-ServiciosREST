@@ -21,12 +21,13 @@ import co.edu.uniandes.csw.mueblesdelosalpes.logica.interfaces.IServicioPersiste
 import java.util.List;
 import javax.ejb.EJB;
 import javax.ejb.Stateful;
+import javax.ejb.Stateless;
 
 /**
  * Implementación de los servicios de administración de un vendedor en el sistema
  * @author Juan Sebastián Urrego
  */
-@Stateful
+@Stateless
 public class ServicioVendedoresMock implements IServicioVendedoresMockRemote, IServicioVendedoresMockLocal {
 
     //-----------------------------------------------------------
