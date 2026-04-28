@@ -11,3 +11,23 @@ El objetivo es exponer la lógica de negocio de la aplicación **Muebles de los 
 - Probar los servicios con herramientas como **Postman**.
 
 ---
+
+## 🏗️ Arquitectura del proyecto
+El proyecto se organiza en tres módulos principales:
+
+- **mueblesdelosalpes.backend**  
+  Contiene la lógica de negocio y la persistencia simulada (*mock*).  
+  - `ServicioPersistenciaMock`  
+  - `ServicioCatalogoMock`  
+  - `ServicioVendedoresMock`  
+
+- **mueblesdelosalpes.servicios**  
+  Expone los servicios REST que interactúan con el backend.  
+  - `CatalogoService`  
+  - `VendedoresService`  
+  - `OfertaService` (implementación solicitada en el laboratorio)  
+
+- **mueblesdelosalpes.interfaz**  
+  Módulo de interfaz web (no utilizado en este laboratorio).
+
+---
