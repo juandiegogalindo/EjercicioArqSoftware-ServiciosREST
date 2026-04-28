@@ -31,3 +31,69 @@ El proyecto se organiza en tres módulos principales:
   Módulo de interfaz web (no utilizado en este laboratorio).
 
 ---
+
+## ⚙️ Configuración
+1. Clonar el repositorio en NetBeans.  
+2. Realizar **Clean and Build** de los módulos `backend` y `servicios`.  
+3. Desplegar únicamente el módulo `mueblesdelosalpes.servicios` en GlassFish 4.1.  
+4. Acceder a los servicios REST en la ruta: http://localhost:8080/mueblesdelosalpes.servicios/webresources/
+
+---
+
+## 🚀 Servicios REST implementados
+
+### Vendedores
+- **GET** `/vendedores` → Lista todos los vendedores.  
+- **POST** `/vendedores` → Agrega un nuevo vendedor.  
+- Ejemplo de JSON válido:
+ ```json
+ {
+   "nombres": "Juan",
+   "apellidos": "Pérez",
+   "experiencia": [
+     {
+       "id": 1,
+       "nombreEmpesa": "Prueba S.A.",
+       "cargo": "Vendedor",
+       "descripcion": "Experiencia de prueba",
+       "ano": 2020
+     }
+   ],
+   "salario": 1500000,
+   "comisionVentas": 120000,
+   "perfil": "Ingeniero de sistemas",
+   "foto": "juanFoto",
+   "identificacion": 5
+ }
+ ```
+- **DELETE** `/vendedores/{id}` → Elimina un vendedor por su identificador.
+
+### Catálogo
+- **GET** `/catalogo/muebles` → Lista todos los muebles disponibles.
+
+### Ofertas (entregable del laboratorio)
+- **GET** `/oferta/ofertas` → Lista todas las ofertas registradas.  
+- **POST** `/oferta/agregar` → Agrega una nueva oferta sobre un mueble.
+
+---
+
+## 🧪 Pruebas con Postman
+- Se recomienda usar **Postman** para probar los endpoints.  
+- Ejemplos de pruebas incluidas en el entregable:  
+- Pantallazo de creación de un vendedor.  
+- Pantallazo de eliminación de un vendedor.  
+- Pantallazo de creación de una oferta.  
+- Pantallazo de listado de ofertas.
+
+---
+
+## 📄 Entregables
+- Código fuente modificado con los servicios REST.  
+- Evidencias en Postman: creación y visualización de vendedores y ofertas.  
+- README con instrucciones de ejecución y pruebas.
+
+---
+
+## 👨‍💻 Autor
+- **Juan Sebastián Urrego**  
+Proyecto académico para el curso de Arquitectura de Software - Servicios REST.
