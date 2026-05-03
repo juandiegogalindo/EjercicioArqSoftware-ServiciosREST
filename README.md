@@ -53,4 +53,3 @@ El proyecto se organiza en tres módulos principales:
 ## Entregables
 - Código fuente modificado con los servicios REST.  
 - Evidencias en Postman: creación y visualización de vendedores y ofertas.  
-- README con instrucciones de ejecución y pruebas.
