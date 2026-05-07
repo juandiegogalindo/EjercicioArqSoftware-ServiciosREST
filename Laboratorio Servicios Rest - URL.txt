@@ -1,0 +1,29 @@
+Laboratorio Servicios Rest
+
+Get:
+http://localhost:8080/mueblesdelosalpes.servicios/webresources/vendedores
+
+Post:
+{
+  "nombres": "Juan",
+  "apellidos": "Pérez",
+  "experiencia": [
+    {
+      "id": 1,
+      "nombreEmpesa": "Prueba S.A.",
+      "cargo": "Vendedor",
+      "descripcion": "Experiencia de prueba",
+      "ano": 2020
+    }
+  ],
+  "salario": 1500000,
+  "comisionVentas": 120000,
+  "perfil": "Ingeniero de sistemas",
+  "foto": "juanFoto",
+  "identificacion": 5
+}
+
+Delete:
+
+http://localhost:8080/mueblesdelosalpes.servicios/webresources/vendedores/1
+
